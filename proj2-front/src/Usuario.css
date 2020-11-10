@@ -1,0 +1,14 @@
+.Button {
+    text-decoration: none;
+    color: white;
+    border: 5px solid black;
+    padding: 3%;
+    margin-bottom: 10px;
+}
+
+.Btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    size: 10px;
+}
