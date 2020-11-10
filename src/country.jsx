@@ -28,7 +28,7 @@ export default class Country extends Component {
             }
         })
         const fetchData = async () => {
-            const response = await axios.get('http://localhost:3003/country/searchCountry/' + name)
+            const response = await axios.get('https://tecweb-proj2.herokuapp.com/country/searchCountry/' + name)
             .catch(erro => console.log(erro))
             
             if (!response.data) {

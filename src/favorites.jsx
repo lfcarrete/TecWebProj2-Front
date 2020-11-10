@@ -26,7 +26,7 @@ export default class favorite extends Component {
                 }
             })
             console.log(this.state)
-            const response = await axios.get('http://localhost:3003/country/fetchData')
+            const response = await axios.get('https://tecweb-proj2.herokuapp.com/country/fetchData')
             .catch(erro => console.log(erro))
             
             if (!response.data) {

@@ -30,7 +30,7 @@ export default class favoriteList extends Component {
         var count  = this.props.location.state.name
         console.log(this.props.location.state)
 
-        axios.patch('http://localhost:3003/favorite/update/' + nome + '/' + count)
+        axios.patch('https://tecweb-proj2.herokuapp.com/favorite/update/' + nome + '/' + count)
             .then(resp => {
                 if(Math.floor(resp.status/100) == 2){
                     this.setState((state) => {

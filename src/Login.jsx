@@ -18,7 +18,7 @@ export default class Login extends Component {
     }
 
     cadastro() {
-        axios.post('http://localhost:3003/users/login', this.state.usuario)
+        axios.post('https://tecweb-proj2.herokuapp.com/users/login', this.state.usuario)
             .then(resp => {
                 if(resp.data == true ){
                     this.setState((state) => {

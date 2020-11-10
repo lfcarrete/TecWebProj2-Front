@@ -23,7 +23,7 @@ export default class favoritesPag extends Component {
             }
         })
         const fetchData = async () => {
-            const response = await axios.get('http://localhost:3003/favorite/' + n)
+            const response = await axios.get('https://tecweb-proj2.herokuapp.com/favorite/' + n)
             .catch(erro => console.log(erro))
             console.log(response)
             

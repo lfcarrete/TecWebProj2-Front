@@ -29,7 +29,7 @@ export default class AllCountries extends Component {
                 }
             })
             console.log(this.state)
-            const response = await axios.get('http://localhost:3003/country/fetchData')
+            const response = await axios.get('https://tecweb-proj2.herokuapp.com/country/fetchData')
             .catch(erro => console.log(erro))
             
             if (!response.data) {
@@ -50,7 +50,7 @@ export default class AllCountries extends Component {
     }
 
     favorite() {
-        axios.post('http://localhost:3003/favorite/create/' + this.state.usuario.username, this.state.usuario.username)
+        axios.post('https://tecweb-proj2.herokuapp.com/favorite/create/' + this.state.usuario.username, this.state.usuario.username)
             .then(resp => {
                 if(Math.floor(resp.status/100) == 2){
                     this.setState((state) => {

@@ -17,7 +17,7 @@ export default class Cadastrar extends Component {
     }
 
     cadastro() {
-        axios.post('http://localhost:3003/users/signup', this.state.usuario)
+        axios.post('https://tecweb-proj2.herokuapp.com/users/signup', this.state.usuario)
             .then(resp => {
                 if(Math.floor(resp.status/100) == 2){
                     this.setState((state) => {
